@@ -1,0 +1,55 @@
+<%= form_for :code_assignments, url: code_assignments_path do |f| %>
+<p>
+  <%= f.label :title %><br>
+  <%= f.text_field :title %>
+</p>
+
+<p>
+  <%= f.label :Due_Date %><br>
+  <%= f.date_field :Due_Date %>
+</p>
+
+<p>
+  <%= f.label :Functionality %><br>
+  <%= f.number_field( 'functionality') %>
+</p>
+
+<p>
+  <%= f.label :Readability %><br>
+  <%= f.number_field( 'readability') %>
+</p>
+
+<p>
+  <%= f.label :Style %><br>
+  <%= f.number_field( 'style') %>
+</p>
+
+<p>
+  <%= f.label :UI_UX %><br>
+  <%= f.number_field( 'ui_ux') %>
+</p>
+
+<p>
+  <%= f.label :Deployment %><br>
+  <%= f.number_field( 'deployment') %>
+</p>
+
+<p>
+  <%= f.label :Total %><br>
+  <%= f.number_field( 'Total') %>
+</p>
+
+<p>
+  <%= f.label :github %><br>
+  <%= f.text_field :github %>
+</p>
+
+<p>
+  <%= f.label :link %><br>
+  <%= f.text_field :link %>
+</p>
+
+<p>
+  <%= f.submit %>
+</p>
+<% end %>
